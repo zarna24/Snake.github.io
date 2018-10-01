@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+            <h1>Snake</h1>
+            <p class="score">Score: <span id="score_value">0</span></p>
+            <p class="score">High Score: <span id="high_score">0</span></p>
+    </div>
+    <div id="settings">
+        <h3>Settings</h3>
+        <label class="length"> Snake Lenght
+            <input type="number" id="snakeLength" value="2">
+        </label>
+        <label id="snakeLevels"> Snake Level
+               <select  id="levels">
+                   <option value="1">Novice</option>
+                   <option value="3">Intermediate </option>
+                   <option value="5">Hard</option>
+               </select>
+       </label>
+       <label id="snake-speed"> Snake Speed
+            <input type="text" id="snakeSpeed" value="1">
+        </label>
+        <label id="numberofFood"> Number of Food
+                <input type="text" id="apples" value="1">
+            </label>
+        <label id="screenSize"> Screen Size
+                <select  id="boxSize">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium </option>
+                    <option value="large">Large</option>
+                </select>
+        </label>
+       <a href="javascript:" id="startGame">Start Game</a>
+       
+
+    </div>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script src="Food.js"></script>
+    <script src="snake.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
